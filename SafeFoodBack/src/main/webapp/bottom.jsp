@@ -14,6 +14,6 @@
 			1544-0000<br> <span class="glyphicon glyphicon-send"
 				aria-hidden="true"></span> ssafy@ssafy.com
 		</p>
-		<div>Copyright. ssafy2 박준성 박유진</div>
+		<div>Copyright. ssafy2 박준성 임선우</div>
 	</footer>
 </div>
