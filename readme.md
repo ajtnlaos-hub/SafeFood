@@ -2,8 +2,8 @@
 
 공공데이터 포털의 식품정보를 활용하여 사용자에게 재료, 칼로리, 알레르기 성분 등의 정보를 제공하여 안전한 식품섭취를 도와주는 웹 
     
-처리된 요구사항 목록
-* 기존 명세서 + Rest + QNA
+처리된 요구사항 목록(기존 명세서 + Rest + QNA)
+
 |난이도|구현기능|세부기능|작성여부| 
 |:---:|:---:|---|:---:| 
 |기본|QnA게시판 Vue 적용 웹페이지|게시글목록|O|
@@ -25,7 +25,6 @@
 게시글 등록1<br>
 <img src="./capture/게시글등록1.jpg" alt="front" style="zoom:60%;" />
 <br>
-
 게시글 등록2<br>
 <img src="./capture/게시글등록2.jpg" alt="front" style="zoom:60%;" />
 <br>
@@ -54,11 +53,8 @@
 게시판 메인<br>
 <img src="./capture/QnAmain.jpg" alt="front" style="zoom:60%;" />
 <br>
-게시판 DB<br>
-<img src="./capture/QnADB.jpg" alt="front" style="zoom:60%;" />
-<br>
 
-**기존 항목**
+**기존 항목**<br>
 클래스 다이어그램<br>
 <img src="./capture/클래스다이어그램.PNG" alt="front" style="zoom:60%;" />
 <br>
