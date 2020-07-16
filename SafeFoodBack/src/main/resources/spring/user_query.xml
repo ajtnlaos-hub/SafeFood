@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="sql.safefood.user">
+	<select id="selectUser" parameterType="user" resultType="user">
+		SELECT * FROM USER WHERE ID=#{id} AND NAME=#{name}
+	</select>
+	<select id="selectUserDetail" parameterType="string" resultMap="userDetail">
+		SELECT U.ID, U.PASSWORD, U.NAME, U.ADDRESS, U.PHONE, A.ID, A.INGREDIENT
+		FROM USER AS U JOIN ALLERGY AS A USING(ID)
+		WHERE ID=#{id};
+	</select>
+	<update id="updateUser" parameterType="user">
+		UPDATE USER SET PASSWORD=#{password}, NAME=#{name}, ADDRESS=#{address}, PHONE=#{phone}
+		WHERE ID=#{id}
+	</update>
+	<delete id="deleteUserAllergy" parameterType="string">
+		DELETE FROM ALLERGY WHERE ID=#{id}
+	</delete>
+	<insert id="insertUserAllergy" parameterType="allergy">
+		INSERT INTO ALLERGY(ID, INGREDIENT) VALUES(#{id}, #{ingredient});
+	</insert>
+	<insert id="insertUser" parameterType="user">
+		INSERT INTO USER(ID, PASSWORD, NAME, ADDRESS, PHONE)
+		VALUES(#{id}, #{password}, #{name}, #{address}, #{phone})
+	</insert>
+	<delete id="deleteUser" parameterType="string">
+		DELETE FROM USER WHERE ID=#{id}
+	</delete>
+	<resultMap id="userDetail" type="user">
+		<id property="id" column="id" />
+		<result property="password" column="password" />
+		<result property="name" column="name" />
+		<result property="address" column="address" />
+		<result property="phone" column="phone" />
+		<collection property="allergyList" ofType="allergy">
+			<result property="id" column="id"/>
+			<result property="ingredient" column="ingredient" />
+		</collection>
+	</resultMap>
+</mapper>

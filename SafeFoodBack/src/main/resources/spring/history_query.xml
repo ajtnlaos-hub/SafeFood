@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="sql.safefood.history">
+	<insert id="insertHistory" parameterType="history">
+		insert into history
+		(id,code,count) values (#{id}, #{code}, #{count})
+	</insert>
+
+	<select id="selectMyHistory" parameterType="string"	resultType="historyDetail">
+		select  f.name as name , f.img as img , h.count as count, h.eating_date as eatingDate ,h.code as code 
+		from history h join food f using(#{code})
+		where h.id = #{id};
+	</select>
+
+</mapper>

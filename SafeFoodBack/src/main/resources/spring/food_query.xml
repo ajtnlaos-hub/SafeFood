@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="sql.safefood.food">
+	<select id="selectFoodList" resultType="food">
+		select * from food
+	</select>
+	<select id="selectFoodDetail" parameterType="int"
+		resultType="food">
+		select * from food
+		where code=#{code}
+	</select>
+</mapper>

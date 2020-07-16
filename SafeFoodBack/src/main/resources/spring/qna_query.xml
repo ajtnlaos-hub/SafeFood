@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="sql.safefood.qna">
+	<select id="selectAllQnA" resultType="qna">
+		SELECT * FROM QNA ORDER BY QNA_NUM DESC
+	</select>
+	<select id="selectQnA" resultType="qna" parameterType="int">
+		SELECT * FROM QNA WHERE QNA_NUM=#{qnaNum}
+	</select>
+	<update id="update" parameterType="qna">
+		UPDATE QNA SET TITLE=#{title}, CONTENTS=#{contents} WHERE QNA_NUM=#{qnaNum}
+	</update>
+	<delete id="delete" parameterType="int">
+		DELETE FROM QNA WHERE QNA_NUM=#{qnaNum}
+	</delete>
+	<insert id="insert" parameterType="qna" useGeneratedKeys="true" keyProperty="qnaNum" keyColumn="QNA_NUM">
+		INSERT INTO QNA(TITLE, WRITER, CONTENTS) VALUES(#{title}, #{writer}, #{contents})
+	</insert>
+</mapper>

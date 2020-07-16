@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="sql.safefood.notice">
+	<select id="selectAllNotice" resultType="notice">
+		SELECT * FROM NOTICE
+	</select>
+	<select id="selectNotice" resultType="notice" parameterType="Integer">
+		SELECT * FROM NOTICE WHERE NOTICE_NUM=#{noticeNum}
+	</select>
+	<update id="update" parameterType="notice">
+		UPDATE NOTICE SET TITLE=#{title}, CONTENTS=#{contents} WHERE NOTICE_NUM=#{noticeNum}
+	</update>
+	<delete id="delete" parameterType="Integer">
+		DELETE FROM NOTICE WHERE NOTICE_NUM=#{noticeNum}
+	</delete>
+	<insert id="insert" parameterType="notice">
+		INSERT INTO NOTICE(TITLE, WRITER, CONTENTS) VALUES(#{title}, #{writer}, #{contents})
+	</insert>
+</mapper>

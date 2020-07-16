@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<settings>
+		<setting name="mapUnderscoreToCamelCase" value="true"></setting>
+		<setting name="jdbcTypeForNull" value="NULL"></setting>
+	</settings>
+	<typeAliases>
+		<typeAlias type="com.ssafy.safefood.dto.Food" alias="food" />
+		<typeAlias type="com.ssafy.safefood.dto.History" alias="history" />
+		<typeAlias type="com.ssafy.safefood.dto.HistoryDetail" alias="historyDetail" />
+		<typeAlias type="com.ssafy.safefood.dto.User" alias="user" />
+		<typeAlias type="com.ssafy.safefood.dto.Allergy" alias="allergy" />
+		<typeAlias type="com.ssafy.safefood.dto.Notice" alias="notice" />
+		<typeAlias type="com.ssafy.safefood.dto.QnA" alias="qna" />
+	</typeAliases>
+	<mappers>
+		<mapper resource="spring/food_query.xml" />
+		<mapper resource="spring/user_query.xml" />
+		<mapper resource="spring/history_query.xml" />
+		<mapper resource="spring/notice_query.xml" />
+		<mapper resource="spring/qna_query.xml" />
+	</mappers>
+</configuration>
