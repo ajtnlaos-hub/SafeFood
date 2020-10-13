@@ -1,27 +1,23 @@
 # SafeFood
 
 공공데이터 포털의 식품정보를 활용하여 사용자에게 재료, 칼로리, 알레르기 성분 등의 정보를 제공하여 안전한 식품섭취를 도와주는 웹 
-    
-처리된 요구사항 목록(기존 명세서 + Rest + QNA)
 
-|난이도|구현기능|세부기능|작성여부| 
-|:---:|:---:|---|:---:| 
-|기본|QnA게시판 Vue 적용 웹페이지|게시글목록|O|
-|기본|QnA게시판 Vue 적용 웹페이지|게시글등록|O| 
-|기본|QnA게시판 Vue 적용 웹페이지|게시글수정|O|
-|기본|QnA게시판 Vue 적용 웹페이지|게시글상세검색|O| 
-|기본|서버측구현|게시글등록|O|
-|기본|서버측구현|게시글목록|O| 
-|기본|서버측구현|게시글삭제|O|
-|기본|서버측구현|게시글수정|O|
-|기본|서버측구현|게시글상세검색|O|
-|추가|식품별 검색 빈도수 or 추가기능 - spring mvc에 있는거 아님|기능명|X| 
-|심화|메인 페이지 or 추가기능 - spring mvc에 있는거 아님|프로젝트 합치기|O|
-
-- 게시판 다이어그램<br>
-<img src="./capture/게시판다이어그램.PNG" alt="front"  width="700"  height="500" />
+- 클래스 다이어그램<br>
+<img src="./capture/클래스다이어그램.PNG" alt="front" width="700"  height="500" />
 <br>
 
+- 로그인<br>
+<img src="./capture/로그인.JPG" alt="front" width="700"  height="500" />
+<br>
+
+- 로그아웃<br>
+<img src="./capture/로그아웃.JPG" alt="front" width="700"  height="500" />
+<br>
+
+- 회원가입<br>
+<img src="./capture/회원가입.JPG" alt="front" width="700"  height="500" />
+<br>
+    
 - 게시글 등록1<br>
 <img src="./capture/게시글등록1.jpg" alt="front" width="700"  height="500" />
 <br>
@@ -58,27 +54,6 @@
 <img src="./capture/QnAmain.jpg" alt="front" width="700"  height="500" />
 <br>
 
-**기존 항목**<br>
-
-- 클래스 다이어그램<br>
-<img src="./capture/클래스다이어그램.PNG" alt="front" width="700"  height="500" />
-<br>
-
-- 로그인<br>
-<img src="./capture/로그인.JPG" alt="front" width="700"  height="500" />
-<br>
-
-- 로그아웃<br>
-<img src="./capture/로그아웃.JPG" alt="front" width="700"  height="500" />
-<br>
-
-- 회원가입<br>
-<img src="./capture/회원가입.JPG" alt="front" width="700"  height="500" />
-<br>
-
-- 회원정보수정삭제<br>
-<img src="./capture/회원정보수정삭제.JPG" alt="front" width="700"  height="500" />
-<br>
 
 - 상품목록조회<br>
 <img src="./capture/상품목록조회.JPG" alt="front" width="700"  height="500" />
@@ -112,6 +87,3 @@
 <img src="./capture/공지사항등록.JPG" alt="front" width="700"  height="500" />
 <br>
 
-- Insert History<br>
-<img src="./capture/myFoodListDB_insert.PNG" alt="front" width="700"  height="500" />
-<br>
