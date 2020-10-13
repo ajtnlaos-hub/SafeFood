@@ -17,6 +17,38 @@
 - 회원가입<br>
 <img src="./capture/회원가입.JPG" alt="front" width="700"  height="500" />
 <br>
+
+- 상품목록조회<br>
+<img src="./capture/상품목록조회.JPG" alt="front" width="700"  height="500" />
+<br>
+
+- 상품명검색<br>
+<img src="./capture/상품명검색.JPG" alt="front" width="700"  height="500" />
+<br>
+
+- 재료기반검색<br>
+<img src="./capture/재료기반검색.JPG" alt="front" width="700"  height="500" />
+<br>
+
+- 제조사기반검색<br>
+<img src="./capture/제조사기반검색.JPG" alt="front" width="700"  height="500" />
+<br>
+
+- 제품상세조회<br>
+<img src="./capture/제품상세조회.JPG" alt="front" width="700"  height="500" />
+<br>
+
+- 공지사항조회<br>
+<img src="./capture/공지사항조회.JPG" alt="front" width="700"  height="500" />
+<br>
+
+- 공지사항등록<br>
+<img src="./capture/공지사항등록.JPG" alt="front" width="700"  height="500" />
+<br>
+
+- 공지사항수정삭제<br>
+<img src="./capture/공지사항등록.JPG" alt="front" width="700"  height="500" />
+<br>
     
 - 게시글 등록1<br>
 <img src="./capture/게시글등록1.jpg" alt="front" width="700"  height="500" />
@@ -55,35 +87,4 @@
 <br>
 
 
-- 상품목록조회<br>
-<img src="./capture/상품목록조회.JPG" alt="front" width="700"  height="500" />
-<br>
-
-- 상품명검색<br>
-<img src="./capture/상품명검색.JPG" alt="front" width="700"  height="500" />
-<br>
-
-- 재료기반검색<br>
-<img src="./capture/재료기반검색.JPG" alt="front" width="700"  height="500" />
-<br>
-
-- 제조사기반검색<br>
-<img src="./capture/제조사기반검색.JPG" alt="front" width="700"  height="500" />
-<br>
-
-- 제품상세조회<br>
-<img src="./capture/제품상세조회.JPG" alt="front" width="700"  height="500" />
-<br>
-
-- 공지사항조회<br>
-<img src="./capture/공지사항조회.JPG" alt="front" width="700"  height="500" />
-<br>
-
-- 공지사항등록<br>
-<img src="./capture/공지사항등록.JPG" alt="front" width="700"  height="500" />
-<br>
-
-- 공지사항수정삭제<br>
-<img src="./capture/공지사항등록.JPG" alt="front" width="700"  height="500" />
-<br>
 
